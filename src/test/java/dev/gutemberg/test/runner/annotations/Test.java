@@ -1,4 +1,4 @@
-package dev.gutemberg.expression.evaluator.annotations;
+package dev.gutemberg.test.runner.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

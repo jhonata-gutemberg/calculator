@@ -1,6 +1,6 @@
-package dev.gutemberg.expression.evaluator.assertions;
+package dev.gutemberg.test.runner.assertions;
 
-import dev.gutemberg.expression.evaluator.models.exceptions.AssertionFailedException;
+import dev.gutemberg.test.runner.models.exceptions.AssertionFailedException;
 
 public class Assertions {
     public static void assertEquals(final double expected, final double actual) {

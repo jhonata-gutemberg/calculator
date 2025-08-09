@@ -1,9 +1,9 @@
 package dev.gutemberg.expression.evaluator.evaluators;
 
-import dev.gutemberg.expression.evaluator.annotations.Test;
-import dev.gutemberg.expression.evaluator.assertions.Assertions;
+import dev.gutemberg.test.runner.annotations.Test;
+import dev.gutemberg.test.runner.assertions.Assertions;
 
-import static dev.gutemberg.expression.evaluator.assertions.Assertions.assertEquals;
+import static dev.gutemberg.test.runner.assertions.Assertions.assertEquals;
 
 public class ExpressionEvaluatorTest {
     @Test

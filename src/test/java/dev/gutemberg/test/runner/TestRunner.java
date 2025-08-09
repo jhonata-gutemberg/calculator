@@ -1,10 +1,8 @@
-package dev.gutemberg.expression.evaluator;
+package dev.gutemberg.test.runner;
 
-import dev.gutemberg.expression.evaluator.annotations.Test;
-
+import dev.gutemberg.test.runner.annotations.Test;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
-import java.util.stream.Collectors;
 
 import static java.lang.System.out;
 
@@ -25,14 +23,12 @@ public class TestRunner {
                 tests.get(i).invoke(instance);
                 out.println("Passed ✅");
             }
-        } catch (final ClassNotFoundException ignored) {
-
         } catch (final InvocationTargetException e) {
             out.println("Failed ⛔");
            throw new RuntimeException(e.getCause());
         } catch (InstantiationException | IllegalAccessException | NoSuchMethodException e) {
             throw new RuntimeException(e);
-        }
+        } catch (final ClassNotFoundException ignored) {}
         out.println("Success \uD83C\uDF89");
     }
 }
