@@ -1,6 +1,6 @@
-package dev.gutemberg.calculator;
+package dev.gutemberg.expression.evaluator;
 
-import dev.gutemberg.calculator.evaluators.ExpressionEvaluator;
+import dev.gutemberg.expression.evaluator.evaluators.ExpressionEvaluator;
 
 public class Main {
     public static void main(final String[] args) {

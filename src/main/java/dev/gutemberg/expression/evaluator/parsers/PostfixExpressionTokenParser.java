@@ -1,6 +1,6 @@
-package dev.gutemberg.calculator.parsers;
+package dev.gutemberg.expression.evaluator.parsers;
 
-import dev.gutemberg.calculator.models.wrappers.ExpressionToken;
+import dev.gutemberg.expression.evaluator.models.wrappers.ExpressionToken;
 
 import java.util.ArrayList;
 import java.util.List;

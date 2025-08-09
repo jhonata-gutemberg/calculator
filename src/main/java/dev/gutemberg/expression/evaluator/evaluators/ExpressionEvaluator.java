@@ -1,7 +1,7 @@
-package dev.gutemberg.calculator.evaluators;
+package dev.gutemberg.expression.evaluator.evaluators;
 
-import dev.gutemberg.calculator.parsers.ExpressionTokenParser;
-import dev.gutemberg.calculator.parsers.PostfixExpressionTokenParser;
+import dev.gutemberg.expression.evaluator.parsers.ExpressionTokenParser;
+import dev.gutemberg.expression.evaluator.parsers.PostfixExpressionTokenParser;
 
 public class ExpressionEvaluator {
     public static double evaluate(final String expression) {

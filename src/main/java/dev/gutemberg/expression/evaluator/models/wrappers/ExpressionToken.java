@@ -1,7 +1,7 @@
-package dev.gutemberg.calculator.models.wrappers;
+package dev.gutemberg.expression.evaluator.models.wrappers;
 
-import dev.gutemberg.calculator.models.enums.Operator;
-import dev.gutemberg.calculator.models.enums.Parentheses;
+import dev.gutemberg.expression.evaluator.models.enums.Operator;
+import dev.gutemberg.expression.evaluator.models.enums.Parentheses;
 
 public record ExpressionToken(Double operand, Operator operator, Parentheses parentheses) {
     public static ExpressionToken from(final Double operand) {

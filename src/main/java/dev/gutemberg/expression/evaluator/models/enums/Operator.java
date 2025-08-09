@@ -1,4 +1,4 @@
-package dev.gutemberg.calculator.models.enums;
+package dev.gutemberg.expression.evaluator.models.enums;
 
 import java.util.Arrays;
 
