@@ -11,7 +11,10 @@ public class PostfixExpressionTokenEvaluator {
         for (var token: tokens) {
             if (token.isOperator()) {
                 final var y = stack.pop();
-                final var x = stack.pop();
+                var x = 0.0;
+                if (!stack.isEmpty()) {
+                    x = stack.pop();
+                }
                 stack.push(token.operator().apply(x, y));
             } else {
                 stack.push(token.operand());

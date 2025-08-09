@@ -95,4 +95,31 @@ public class ExpressionEvaluatorTest {
 
         assertEquals(21.0, value);
     }
+
+    @Test
+    public void shouldReturnCorrectValueWhenEvaluate11() {
+        final var expression = "-3 + 4";
+
+        final var value = ExpressionEvaluator.evaluate(expression);
+
+        assertEquals(1.0, value);
+    }
+
+    @Test
+    public void shouldReturnCorrectValueWhenEvaluate12() {
+        final var expression = "-4 + 3";
+
+        final var value = ExpressionEvaluator.evaluate(expression);
+
+        assertEquals(-1.0, value);
+    }
+
+    @Test
+    public void shouldReturnCorrectValueWhenEvaluate13() {
+        final var expression = "-10";
+
+        final var value = ExpressionEvaluator.evaluate(expression);
+
+        assertEquals(-10.0, value);
+    }
 }
