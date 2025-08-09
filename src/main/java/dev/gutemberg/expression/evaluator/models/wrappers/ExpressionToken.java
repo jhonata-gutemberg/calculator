@@ -27,4 +27,15 @@ public record ExpressionToken(Double operand, Operator operator, Parentheses par
     public boolean isParentheses() {
         return parentheses != null;
     }
+
+    @Override
+    public String toString() {
+        if (isOperand()) {
+            return operand.toString();
+        } else if (isOperator()) {
+            return operator.toString();
+        } else {
+            return parentheses.toString();
+        }
+    }
 }
