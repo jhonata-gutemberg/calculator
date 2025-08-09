@@ -16,18 +16,25 @@ public class ExpressionTokenParser {
                 operandBuilder.append(c);
             } else if (Operator.equals(c)) {
                 if (!operandBuilder.isEmpty()) {
-                    tokens.add(ExpressionToken.from(Double.parseDouble(operandBuilder.toString())));
+                    tokens.add(buildToken(operandBuilder));
                     operandBuilder = new StringBuilder();
                 }
                 tokens.add(ExpressionToken.from(Operator.from(c)));
             } else if (Parentheses.equals(c)) {
                 if (!operandBuilder.isEmpty()) {
-                    tokens.add(ExpressionToken.from(Double.parseDouble(operandBuilder.toString())));
+                    tokens.add(buildToken(operandBuilder));
                     operandBuilder = new StringBuilder();
                 }
                 tokens.add(ExpressionToken.from(Parentheses.from(c)));
             }
         }
+        if (!operandBuilder.isEmpty()) {
+            tokens.add(buildToken(operandBuilder));
+        }
         return tokens;
+    }
+
+    private static ExpressionToken buildToken(final StringBuilder operandBuilder) {
+        return ExpressionToken.from(Double.parseDouble(operandBuilder.toString()));
     }
 }
