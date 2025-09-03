@@ -1,4 +1,4 @@
-![Expression Evaluator](docs/assets/expression-evaluator)
+![Expression Evaluator](docs/assets/expression-evaluator.png)
 
 Tiny Java library that parses and evaluates arithmetic expressions with support for variables and parentheses. Includes a lightweight, zero-dependency test runner.
 
